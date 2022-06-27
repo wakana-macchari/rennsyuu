@@ -1,1 +1,25 @@
 <h1>変なクイズ</h1>
+<script type="module">
+import { bg, show}from"https://js.sabae.cc/egadv.js";
+await bg(29);
+let a = await show("誰の住処？",["山姥","鬼"]);
+if(a=="山姥"){
+    await show("正解じゃ。夜に包丁研ぐ聞こえるから気を付けるんじゃよ。")
+} else {
+    await show("そうだ俺様の家だ。ちょうどよかった。今日の夜飯はお前だ。")
+}
+await bg(474)
+await show("続いてはこの問題じゃ")
+for(;;){
+    let a = await show("舟をこいでいる人は何人家族？", ["1人","４人","８人"]);
+    if (a == "８人"){
+        await show("正解だ。父母、祖母祖父、子供３人で暮らしている。大家族うぇい。");
+        break;
+    } else {
+        await show("残念はずれ。もう一度。");
+    }
+}
+await show("今日はここまで！");
+
+
+</script>
